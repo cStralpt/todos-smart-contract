@@ -1,5 +1,6 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
+import "hardhat-abi-exporter";
 
 const config: HardhatUserConfig = {
   solidity: "0.8.19",
@@ -15,6 +16,12 @@ const config: HardhatUserConfig = {
     //   url: "https://polygon-rpc.com/",
     //   accounts: [process.env.pk]
     // }
+  },
+  abiExporter: {
+    path: "./ABI",
+    runOnCompile: true,
+    clear: true,
+    flat: true,
   },
 };
 

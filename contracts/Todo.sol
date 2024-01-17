@@ -28,7 +28,6 @@ contract Todo {
     function editTodo(string memory _name, string memory _content) public {
         require(todoList[_name].id != 0, "No such todo");
         todoList[_name] = TodoItem({id: 1, name: _name, content: _content});
-        emit TodoCreated(_name, 1);
     }
 
     function getTodo(
