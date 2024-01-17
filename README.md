@@ -7,8 +7,8 @@ Try running some of the following tasks:
 ```shell
 pnpm hardhat help
 pnpm hardhat test
-REPORT_GAS=true npx hardhat test
+REPORT_GAS=true pnpm hardhat test
 pnpm hardhat node
-pnpm hardhat run scripts/deploy.ts
+pnpm hardhat run scripts/TodoDeploy.ts
 pnpm hardhat export-abi --no-compile
 ```
