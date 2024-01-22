@@ -2,6 +2,8 @@ import { ethers } from "hardhat";
 
 async function main() {
   // const lockedAmount = ethers.parseEther("0.001");
+  const [deployer] = await ethers.getSigners();
+  console.log("Deploying contracts with the account:", deployer.address);
   const ownerName = "Satriaali";
   const todo = await ethers.deployContract("Todo", [ownerName]);
 
