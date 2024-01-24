@@ -14,6 +14,20 @@ const config: HardhatUserConfig = {
         "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80",
       ],
     },
+    berachainTestnet: {
+      url: "https://artio.rpc.berachain.com/",
+      chainId: 80085,
+      accounts: [
+        "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80",
+      ],
+    },
+    arbitrumStylus: {
+      url: "https://stylus-testnet.arbitrum.io/rpc",
+      chainId: 23011913,
+      accounts: [
+        "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80",
+      ],
+    },
     // mumbai: {
     //   url: "https://rpc-mumbai.matic.today",
     //   accounts: [process.env.pk]
